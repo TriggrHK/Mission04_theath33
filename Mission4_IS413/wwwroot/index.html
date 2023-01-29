@@ -1,0 +1,67 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Trevor - Mission 4</title>
+    <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="shortcut icon" type="image/x-icon" href="img/Logo_Transp.png" />
+    <link href="css/styles.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="middle">
+        <div class="center">
+            <h2>Name: Trevor Heath</h2>
+            <!-- picture of me doing something I enjoy... aka Snowboarding -->
+            <img style="max-height:200px; margin: 15px;" src="img/20220318_132331.jpg" alt="I like going snowboarding with friends!" />
+            
+            <!-- type out a paragraph about desired outcome for IS413 -->
+            <h4>What I hope to get out of IS 413:</h4>
+            <p>
+                I think learning coding at the Enterprise level is really important so I want to prepare to work in
+                the industry and become aware of common issues in the workplace and how to mitigate problems stemming from them.
+            </p>
+
+            <!-- List of top 3 jobs I want post graduation  -->
+            <h4>Top 3 jobs I want post graduation:</h4>
+            <ul>
+                <li>Full-Stack Developer</li>
+                <li>Front End Developer</li>
+                <li>Data Analyst</li>
+            </ul>
+
+            <!-- Grade calculator form -->
+            <h4>Grade Calculator:</h4>
+            <p>Note: If you got 100% of the points on all "assignments" then put in 100 for "Assignments Percentage"</p>
+            <form>
+                <label>Assignments Percentage:</label>
+                <input type="number" id="assignments" value="0"/>
+                <br />
+                <label>Group Project Percentage:</label>
+                <input type="number" id="groupProject" value="0"/>
+                <br />
+                <label>Quizzes Percentage:</label>
+                <input type="number" id="quizzes" value="0"/>
+                <br />
+                <label>Midterm Percentage:</label>
+                <input type="number" id="midterm" value="0"/>
+                <br />
+                <label>Final Percentage:</label>
+                <input type="number" id="final" value="0"/>
+                <br />
+                <label>INTEX Percentage:</label>
+                <input type="number" id="intex" value="0"/>
+                <br />
+            </form>
+            <button id="submitBtn">Submit</button>
+            <br />
+            <span>Course Grade : </span><span id="results">Not Calculated</span>
+
+        </div>
+    </div>
+
+    
+    <script src="lib/bootstrap/js/bootstrap.min.js"></script>
+    <script src="lib/jquery/jquery-3.6.3.min.js"></script>  
+    <script src="js/gradeCalculator.js"></script>
+</body>
+</html>

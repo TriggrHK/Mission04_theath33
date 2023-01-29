@@ -1,0 +1,27 @@
+﻿/*set a background color*/
+body {
+    background-color: darkslategrey;
+}
+
+/*have a set label size so the inputs lign up*/
+label {
+    width: 200px;
+}
+
+/*have a centered element of a fixed size that looks nice*/
+.middle {
+    width: 700px;
+    background-color: whitesmoke;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    box-shadow: 15px 15px black;
+    padding: 15px;
+}
+
+/*center the text inside the "middle" box*/
+.center {
+    margin:auto;
+    width:75%;
+}

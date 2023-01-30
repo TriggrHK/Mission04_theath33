@@ -35,6 +35,7 @@ label {
     width:75%;
 }
 
+/*style the button on hover and normal*/
 button {
     margin: 10px;
     border-radius: 5px;

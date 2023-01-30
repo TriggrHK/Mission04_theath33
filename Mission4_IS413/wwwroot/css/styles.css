@@ -3,6 +3,15 @@ body {
     background-color: darkslategrey;
 }
 
+/*make the inputs look nicer*/
+.inputField {
+    padding: 5px;
+    border: 0;
+    margin: 5px 0;
+    box-shadow: 0 0 15px 4px #d1d1d1;
+    border-radius: 5px;
+}
+
 /*have a set label size so the inputs lign up*/
 label {
     width: 200px;
@@ -24,4 +33,14 @@ label {
 .center {
     margin:auto;
     width:75%;
+}
+
+button {
+    margin: 10px;
+    border-radius: 5px;
+    border-color: #d1d1d1;
+}
+
+button:hover {
+    background-color: #d1d1d1;
 }

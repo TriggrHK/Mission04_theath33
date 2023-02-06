@@ -46,5 +46,6 @@
     }
 
     //add the results to the div on index.html
-    $("#results").text('You got a ' + finalGrade + "% which scored you a " + letterGrade + "!")
+    //$("#results").text('You got a ' + finalGrade + "% which scored you a " + letterGrade + "!")
+    alert('You got a ' + finalGrade + "% which scored you a " + letterGrade + "!")
 })

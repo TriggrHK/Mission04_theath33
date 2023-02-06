@@ -1,0 +1,39 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+    ViewData["Title"] = "Mission 5 - Grade Calculator";
+    ViewData["PageScript"] = "/js/gradeCalculator.js";
+}
+
+@model GradeCalcModel
+<!-- Grade calculator form -->
+<h4>Grade Calculator:</h4>
+<p>Note: If you got 100% of the points on all "assignments" then put in 100 for "Assignments Percentage"</p>
+<form method="post">
+    <label>Assignments Percentage:</label>
+    <input type="number" id="assignments" value=0 asp-for="Assignments" />
+    <br />
+    <label>Group Project Percentage:</label>
+    <input type="number" id="groupProject" value=0 asp-for="GroupProject" />
+    <br />
+    <label>Quizzes Percentage:</label>
+    <input type="number" id="quizzes" value=0 asp-for="Quizzes" />
+    <br />
+    <label>Midterm Percentage:</label>
+    <input type="number" id="midterm" value=0 asp-for="Midterm" />
+    <br />
+    <label>Final Percentage:</label>
+    <input type="number" id="final" value=0 asp-for="Final" />
+    <br />
+    <label>INTEX Percentage:</label>
+    <input type="number" id="intex" value=0 asp-for="Intex" />
+    <br />
+
+    <button type="submit" id="submitBtn">Submit</button>
+    <br />
+
+    <!-- outputs for the grade calculator with a default value -->
+    @*<span>Course Grade : <span id="results">Not Calculated</span></span>*@
+    <div asp-validation-summary="All"></div>
+</form>

@@ -1,0 +1,32 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewData["Title"]</title>
+    <meta charset="utf-8" />
+    <link href="~/lib/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="shortcut icon" type="image/x-icon" href="~/img/Logo_Transp.png" />
+    <link href="~/css/styles.css" rel="stylesheet" />
+</head>
+<body>
+
+    <nav>
+        <a asp-controller="Base" asp-action="Index">Home Page</a>
+        <a asp-controller="Base" asp-action="GradeCalc">Grade Calculator</a>
+    </nav>
+
+    <div>
+        <div class="middle">
+            <div class="center">
+                @RenderBody()
+            </div>
+        </div>
+    </div>
+
+    <script src="~/lib/bootstrap/js/bootstrap.min.js"></script>
+    <script src="~/lib/jquery/jquery-3.6.3.min.js"></script>
+    <script src=@ViewData["PageScript"]></script>
+</body>
+</html>
+
